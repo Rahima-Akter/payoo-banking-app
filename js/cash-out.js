@@ -15,6 +15,13 @@ document.getElementById('cash-out-btn').addEventListener('click', function () {
         // updates the current balance to the main balance
         document.getElementById('account-balance').innerText = newBalance;
 
+
+        // js for showing transaction history
+        const p = document.createElement('p');
+        p.innerText = (`Money deducted: $${newcashOutInput} New Balance: $${newBalance}`);
+        p.className = 'text-center bg-red-500 font-semibold text-white w-3/6 text-xl mx-auto';
+        document.getElementById('transaction-history-form').appendChild(p);
+
     } else{
         alert('Something went wrong, please try again!');
     }
