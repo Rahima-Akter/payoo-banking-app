@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Payoo MFS Banking App</title>
+</head>
+
+<body class="flex items-center justify-center h-screen bg-blue-700">
+
+    <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-sm">
+        <div class="flex justify-center mb-4">
+            <!-- Replace with actual checkmark icon SVG -->
+            <img src="icons/payoo.png" alt="" class="w-[15%]">
+        </div>
+
+        <h2 class="text-center text-xl font-semibold text-gray-700 mb-6">Login</h2>
+
+        <form action="#" method="POST">
+            <!-- Mobile Number Input -->
+            <label class="block text-gray-700">
+                Mobile Number
+                <input type="text" id="mobile-number" placeholder="Enter your number"
+                    class="w-full p-3 mt-2 mb-4 bg-gray-50 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500">
+            </label>
+
+            <!-- PIN Input -->
+            <label class="block text-gray-700">
+                4 Digit Pin
+                <input type="password" id="pin" placeholder="Enter 4 Digit Pin"
+                    class="w-full p-3 mt-2 mb-4 bg-gray-50 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500">
+            </label>
+
+            <!-- Login Button -->
+            <button id="login-btn"
+                class="w-full bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 transition duration-300">Login</button>
+        </form>
+    </div>
+
+    <!-- js for pin validation -->
+    <script src="js/pin-validation.js"></script>
+</body>
+</html>
