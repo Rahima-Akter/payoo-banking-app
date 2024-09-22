@@ -9,7 +9,7 @@
         const pin = document.getElementById('pin').value;
 
         if (pin === '1234') {
-            window.location.href = 'http://127.0.0.1:5500/payoo-home.html';
+            window.location.href = 'https://rahima-akter.github.io/payoo-banking-app/payoo-home.html';
         } else {
             alert('something went wrong, please try again!')
         }
